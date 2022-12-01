@@ -1,0 +1,253 @@
+/* exam.css */
+/* 全局设置 */
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: '微软雅黑';
+    text-decoration: none;
+
+}
+/* 头部 */
+.header{
+    height:110px;    
+    width: 1300px;
+    background: #218a44;
+    margin: auto;
+    position: relative;
+    overflow: hidden; /* 超出隐藏 */
+}
+.headerwrapper{
+    width: 1300px;
+    margin: 0 auto;
+}
+.headerwrapper_left{
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+.headerwrapper_right{
+    float: right;
+    height: 200px;
+}
+
+.search{
+    float: right;
+    width: 200px;
+    height: 100px;
+    margin-top: 10px;
+
+}
+.time {
+    position: relative;
+    margin: auto;
+}
+.nav{
+    background: #218a44;
+    height: 42px;
+    /* padding-left: 100px; */
+    width: 1300px;
+    margin: auto;
+    position: relative;
+    overflow: hidden; /* 超出隐藏 */
+
+}
+
+.nav ul{
+    list-style: none;
+   padding-left: 30px;
+}
+/* li列表项 */
+.nav ul li{
+    list-style: none;
+    height: 42px;
+    line-height: 42px;
+    float: left;
+}
+
+/* 菜单的a超链接 */
+.nav ul li a{
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    padding: 0 32px;
+    display: block;
+}
+/* 超链接悬停时 */
+.nav ul li a:hover{
+    background: #4cac75;
+}
+/* 清除浮动 */
+.nav::after{
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.main_pic{
+    padding-left: 200px;
+    height:110px;    
+    margin: auto;
+    position: relative;
+    overflow: hidden; /* 超出隐藏 */  
+}
+.main{
+   height: 400px;
+}
+.main ul{
+    list-style: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #218a44;
+    text-align: left;
+    /* 字体加粗 */
+    font-weight: bold;
+}
+.main img{
+    padding-top: 10px;
+    padding-right: 15px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.main li{
+    padding-top: 10px;
+    font-size: 13px;
+    font-weight: bolder;
+}
+.main_top{
+    height: 183px;
+    width: 1300px;
+    margin: auto;
+    position: relative;
+    overflow: hidden; /* 超出隐藏 */
+}
+.main_1{
+    margin-left: 30px;
+    float: left;
+    width: 28.3%;
+    List-style-type: none
+}
+.main_2{
+    margin-left: 30px;
+    float: left;
+    width: 28.3%;
+    List-style-type: none
+}
+.main_3{
+    margin-left: 30px;
+    float: left;
+    width: 28.3%;
+    List-style-type: none
+}
+.main_bottom{
+    height: 183px;
+    width: 1300px;
+    margin: auto;
+    position: relative;
+    overflow: hidden; /* 超出隐藏 */
+}
+.main_4{
+    margin-left: 30px;
+    float: left;
+    width: 28.3%;
+    List-style-type: none
+}
+.main_5{
+    margin-left: 30px;
+    float: left;
+    width: 28.3%;
+    List-style-type: none
+}
+.main_6{
+    margin-left: 30px;
+    float: left;
+    width: 28.3%;
+    List-style-type: none
+}
+
+.footer{
+    background-color: #d4dec8;
+    height: 330px;
+
+}
+.foot_1{
+    
+    margin-left: 30px;
+    float: left;
+    width: 16.3%;
+    List-style-type: none
+}
+.foot_1 ul{
+    font-size: 30px;
+    font-weight: bold;
+}
+.foot_2{
+    float: left;
+    width: 16.3%;
+    List-style-type: none
+}
+.foot_2 ul{
+    font-size: 15px;
+    font-weight: bold;
+}
+.foot_2 li{
+    font-size: 13px;
+}
+.foot_3{
+    float: left;
+    width: 16.3%;
+    List-style-type: none
+}
+.foot_3 ul{
+    font-size: 15px;
+    font-weight: bold;
+}
+.foot_3 li{
+    font-size: 13px;
+}
+.foot_4{
+    float: left;
+    width: 16.3%;
+    List-style-type: none
+}
+.foot_4 ul{
+    font-size: 15px;
+    font-weight: bold;
+}
+.foot_4 li{
+    font-size: 13px;
+}
+.foot_5{
+    float: left;
+    width: 16.3%;
+    List-style-type: none
+}
+.foot_5 ul{
+    font-size: 15px;
+    font-weight: bold;
+}
+.foot_5 li{
+    font-size: 13px;
+}
+.foot_6{
+    float: left;
+    width: 16.3%;
+    List-style-type: none
+}
+.foot_6 ul{
+    font-size: 15px;
+    font-weight: bold;
+}
+.foot_6 li{
+    font-size: 13px;
+}
+
+.copyright{
+    
+    padding: 10px 0;
+    text-align: center;
+    color: rgb(94, 83, 83);
+}
