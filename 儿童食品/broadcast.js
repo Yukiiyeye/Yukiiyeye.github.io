@@ -1,3 +1,7 @@
+---
+---
+
+@import "{{ site.js }}";
 var imgArr = []; // 图片数组
 var curIndex = 0; // 当前显示图片
 var timer = null; // 定时器
