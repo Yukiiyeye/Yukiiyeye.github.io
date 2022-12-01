@@ -1,5 +1,9 @@
 /* exam.css */
 /* 全局设置 */
+---
+---
+
+@import "{{ site.theme }}";
 *{
     margin: 0;
     padding: 0;
