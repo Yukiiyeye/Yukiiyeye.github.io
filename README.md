@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>左正扬你妈死了</title>
+  <title>左正扬你妈死了啊</title>
   <style>
     .aa{
         color: red;
