@@ -1,55 +1,260 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>左正扬你妈死了</title>
-  <style>
-    .aa{
-        color: rgb(212, 110, 144);
-        font-size: 130px;
-        font-weight: bold;
-        text-align: center;
-    }
-    .ab {
-        color: rgb(110, 120, 210);
-        font-size: 200px;
-        font-weight: bold;
-        text-align: center;
-    }
-    .ac{
-        color: rgb(62, 204, 124);
-        font-size: 80px;
-        font-weight: bold;
-        text-align: center;
-    }
-    .ad{
-        color: rgb(207, 232, 46);
-        font-size: 80px;
-        font-weight: bold;
-        text-align: center;
-    }
-  </style>
+    <title>儿童食品</title>
+    <meta charset="utf-8">
+    <meta name="referrer" content="no-referrer">
 </head>
-<body>
-    <!-- <div class="aa">
-        zuozhengyangnimasile
-    </div>
-    <div class="ab"  >
+<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_1582902_u0zm91pv15i.css">
+<link type="text/css" rel="stylesheet" href="../儿童食品/broadcast.css" >
+<link type="text/css" rel="stylesheet" href="../儿童食品/prj_childfood.css" >
+<body class="bg">
+        <div class="header">
+          <div class="weather">
+            <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=ya&skin=pitaya" frameborder="0" width="320" height="200" allowtransparency="true"></iframe>
+            </div>
+            <div class="headerwrapper">
+                <div class="headerwrapper_left">
+                    <a href="#">
+                        <img src="../儿童食品-资源/儿童食品/woolworths-logo.png" class="logo" alt="">
+                    </a>
+                    <div id="time" a href="#" alt="时间"></div>     
+                   
+                </div>
+
+                <div class="headerwrapper_right">
+                    <ul><a href="#">登录丨</a>&nbsp;&nbsp;<a href="#">联系我们丨</a>
+                        <a href="#">注册丨</a>&nbsp;&nbsp; <a href="#">帮助中心</a></ul>
+                        <div class="font">
+                            <a href="javascript:fontzoom()">放大</a>
+                            <a href="javascript:fontzoom()">缩小</a>
+                        </div>
+                        <div class="search">
+                            <form action="post">
+                                <button class="button"><img src="../儿童食品-资源/儿童食品/search-green.png" alt="" onclick=""></button>
+                            </form>
+                        </div>
+                </div>
+
+				</div>
+            </div>
+        <!-- 导航 -->
+        <div class="nav">
+                <ul>
+                    <li><a href="#">房子</a></li>
+                    <li><a href="boke.html">博客园</a></li>
+                    <li><a href="Client.html">VIP会员专区</a></li>
+                    <li><a href="https://search.jd.com/Search?keyword=%E5%84%BF%E7%AB%A5%E9%A3%9F%E5%93%81&enc=utf-8&wq=%E5%84%BF%E7%AB%A5%E9%A3%9F%E5%93%81&pvid=3af9a8b1f01540d29e7b26e2d7e75bce">儿童食品在线选购</a></li>
+                    <li><a href="#">美食社区</a></li>
+                    <li><a href="#">食品知识</a></li>
+                    <li><a href="#">网站帮助</a></li>
+                    <li><a href="#">网银在线支付</a></li>
+					<li><a href="#">关于我们</a></li>
+                </ul>
+        </div>
        
-        左正扬你妈死了
-        
-    </div>
-    <div class="ac">
-        左はあなたのお母さんが死んだと脅した
-    </div>
-    <div class="ad">
-        Цзо Чжэнъян, твоя мать мертва
-    </div> -->
-    <div class="ae">
-        <!-- 插入视频 -->
-        <video src="../儿童食品-资源/zzymp4.mp4" controls="controls" width="100%" height="100%">
+            <div class="main_pic">  <img src="../儿童食品-资源/儿童食品/topnav1.png" alt=""></div>
+    
+
+        <!-- 主体部分 -->
+        <div class="mainbody">
+            <!-- 大图 -->
+            <div id="carousel">
+              <ul> <!-- 图片容器 -->
+                <li>
+                    <a href="#"><img src="../儿童食品-资源/儿童食品/01.jpg"></a>
+                </li>
+                <li>
+                 <a href="#"> <img src="../儿童食品-资源/儿童食品/02.jpg"></a>
+                </li>
+                <li>
+                 <a href="#"> <img src="../儿童食品-资源/儿童食品/03.jpg"></a>
+                </li>
+                <li>
+                 <a href="#"> <img src="../儿童食品-资源/儿童食品/04.jpg"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="../儿童食品-资源/儿童食品/05.jpg"></a>
+                </li>
+            </ul>
+              <!-- 按钮组 -->
+              <div id="leftArrow" class="iconfont icon-arrow-lift"></div> <!-- 左箭头切换按钮 -->        
+              <div id="rightArrow" class="iconfont icon-arrow-right"></div> <!-- 右箭头切换按钮 --> 
+              <div id="sliderBtn"></div> <!-- 切换按钮组 -->
+          </div>
+
+         
+            <!-- 内容区 -->
+            <div class="main">
+            <div class="main_top">
+                <div class="main_1">
+                    <ul>梦幻棉花糖</ul>
+                    <hr color="green">
+                    <a href="#"><img src="../儿童食品-资源/儿童食品/body1.jpg"  ></a>
+                    
+                  <li>
+                    棉花糖蓬松柔软，入口即
+                    溶，口味甘甜，深受很多
+                    年轻人的青睐
+                  </li>
+                  <a href="#" 详细内容></a>
+                </div>
+                <div class="main_2">
+                    <ul>进口食品，尝鲜正当时</ul>
+                    <hr color="green">
+                    <a href="#"><img src="../儿童食品-资源/儿童食品/body2.jpg"  ></a>
+                  <li>
+                    基于绝大多数进口食品的
+                    价格都高于市面上同类国
+                    产食品
+                  </li>
+                  <a href="#" 详细内容></a>
+                </div>
+                <div class="main_3">
+                    <ul color="green">美味体验:美国青豆买十送一</ul>
+                    <hr color="green">
+                    <a href="#"><img src="../儿童食品-资源/儿童食品/body3.jpg"  ></a>
+                    <li>
+                    本活动精选八款商品，分
+                    别是：美国青豆芥末味（
+                    小包装）、美国青豆芥末
+                    味（大包装）
+                  </li>
+                  <a href="#" 详细内容></a>
+                </div>
+            </div>
+            <div class="main_bottom">
+                <div class="main_4">
+                    <ul>松脆好口感 方形威化饼</ul>
+                    <hr color="green">
+                    <a href="#"><img src="../儿童食品-资源/儿童食品/body4.jpg"  ></a>
+                    <li>
+                    威化饼采用新鲜、纯正、
+                    支链淀粉多、粘性大的糯
+                    米；先将糯米洗
+                    净、浸泡、晾干、春粉
+                  </li>
+                  <a href="#" 详细内容></a>
+                </div>
+                <div class="main_5">
+                    <ul>泰国干果 营养健康新选择</ul>
+                    <hr color="green">
+                    <a href="#"><img src="../儿童食品-资源/儿童食品/body5.jpg"  ></a>
+                    <li>
+                    花生滋养补益，有助于延
+                    年益寿；所以民间又称之
+                    为“长寿果”。
+                  
+                    
+                  </li>
+                  <a href="#" 详细内容></a>
+                </div>
+                <div class="main_6">
+                    <ul>开怀尝鲜 "洋零食"</ul>
+                    <hr color="green">
+                    <a href="#"><img src="../儿童食品-资源/儿童食品/body6.jpg"  ></a>
+                    <li>
+                   只要你稍微留心一下，便
+                   会发现身边的进口食品专
+                   营店从稀少到常见，越来
+                   越多。
+                  </li>
+                  <a  href="#" 详细内容></a>
+                </div>
+            </div>
+        </div>
+        <!-- 版权区 -->
+        <hr color="green">
+        <div class="footer">
+           <div class="foot_1">
+           <ul>快速导航</ul> 
+           </div>
+           <div class="foot_2">
+            <ul>博客园</ul>
+          </br>
+           <li><a href="#" >查看最新</a></li> 
+           <li> <a href="#" >写博客</a></li>
+            <li><a href="#" >进入博客园</a></li>
+          </br>
+            <ul>VIP专区</ul>
+          </br>
+            <li><a href="#" >VIP会员登录</a></li>
+            <li><a href="#" >申请VIP会员</a></li>
+            <li><a href="#" >订阅免费期刊</a></li>
+           <li><a href="#" >VIP会员的优惠</a></li> 
+           <li><a href="#" >VIP会员帮助</a></li> 
+           </div>
+           <div class="foot_3">
+            <ul>儿童食品选购</ul>
+          </br>
+            <li><a href="#">婴幼儿食品</a></li>
+            <li><a href="#">1~3岁儿童食品</a></li>
+            <li><a href="#">儿童乳制品</a></li>
+            <li><a href="#">儿童零食</a></li>
+            <li><a href="#">儿童饮料</a></li>
+            <li><a href="#">专家咨询</a></li>
+           </div>
+           <div class="foot_4">
+            <ul>美食社区</ul>
+          </br>
+            <li><a href="#">进入社区</a></li>
+            <li><a href="#">最新动态</a></li>
+            <li><a href="#">专题报道</a></li>
+            <li><a href="#">讨论专区</a></li>
+            <li><a href="#">社区帮助</a></li>
+        </br>
+            <ul>食品知识</ul>
+          </br>
+            <li><a href="#">食物的搭配</a></li>
+            <li><a href="#">食物营养学</a></li>
+            <li><a href="#">注意要点</a></li>
+            <li><a href="#">在线咨询</a></li>
+           </div>
+           <div class="foot_5">
+            <ul>网站帮助</ul>
+          </br>
+            <li><a href="#">在线建议</a></li>
+            <li><a href="#">意见建议</a></li>
+          </br>
+            <ul>加入我们</ul>
+          </br>
+            <li><a href="#">事业特色</a></li>
+            <li><a href="#">建店支持</a></li>
+            <li><a href="#">经营管理</a></li>
+            <li><a href="#">在线申请</a></li>
+          </br>
+            <ul>网银在线支付</ul>
+          </br>
+            <li><a href="#">支付平台</a></li>
+            <li><a href="#">支付流传</a></li>
+            <li><a href="#">支付帮助</a></li>
+
+           </div>
+           <div class="foot_6">
+            <ul>关于我们</ul>
+          </br>
+            <li><a href="#">关于公司</a></li>
+            <li><a href="#">关于团队</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">社会责任</a></li>
+            <li><a href="#">展望未来</a></li>
+            <li><a href="#">公司新闻</a></li>
+          </br>
+            <li><a href="#">意见建议</a></li>
+            <li><a href="#">问题投诉</a></li>
+            <li><a href="#">加盟通道</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">人才招聘</a></li>
+           </div>
+         
+        </div>
+        <div class="copyright">
+          <p>儿童食品网，保留一切权利</p>
+         </div>
     </div>
 </body>
+    <script src="../儿童食品/broadcast.js" ></script>
+    <script src="../儿童食品/time.js" ></script>
+    <script src="../儿童食品/fontzoom.js" ></script>
 </html>
