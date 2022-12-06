@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIP客户登录</title>
+</head>
+<body>
+	<style type="text/css">
+            .default {
+				background: #eeeeee;
+				display: inline-block;
+				width: 70px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				margin: 4px 2px;
+			}
+			.weak {
+				background: #FF0000;
+				display: inline-block;
+				width: 70px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				margin: 4px 2px;
+				}
+			.medium {
+				background: #FF9900;
+				display: inline-block;
+				width: 70px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				margin: 4px 2px;
+				}
+			.strong {
+				background: #81c234;
+				display: inline-block;
+				width: 70px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				margin: 4px 2px;
+				}
+		    .aaa{
+				display: inline-block;
+				width: 70px;
+				height: 30px;
+				line-height: 30px;
+				background: #ddd;
+				text-align: center;
+				margin: 4px 2px;}
+			.head_1{
+				color: #FF0000;
+				font-size: 20px;
+				font-weight: bold;
+				text-align: center;
+			}
+	</style>
+	<script type="text/javascript">
+
+			function createCode(){
+				//创建随机4位数字，math.floor向下取整
+				var code=Math.floor(Math.random()*9000+1000);
+				//获取元素对象
+				var  span=document.getElementById("codeSpan");
+				//将数字存放到span中
+				span.innerHTML=code;
+				
+			}
+		//验证用户名
+			function checkUname(){
+				//获取用户获得用户名信息
+					var uname=document.getElementById("uname").value;
+				//创建校验规则,用户名2-4个
+				var reg=/^\w{5,12}$/;
+				//获取span对象
+					var unameSpan=document.getElementById("unameSpan");
+				//开始交验
+					if(unameSpan==""||unameSpan==null){
+						//输入校验结果
+						unameSpan.innerHTML="*用户名不能为空";
+						unameSpan.style.color="red";
+						return false;
+					}else if(reg.test(uname)){
+						//输入校验结果
+						unameSpan.innerHTML="*用户名通过";
+						unameSpan.style.color="green";
+						return true;
+					}else{
+						//输入校验结果
+						unameSpan.innerHTML="*用户名格式不符"
+						unameSpan.style.color="red";
+						return false;
+					}
+				
+			}
+			
+			window.onload = function(){
+
+var oInput = document.getElementById('pwd');
+oInput.value = '';
+var spans = document.getElementsByTagName('span');
+			var spans1=[];
+			var j=0;
+			for(var i=0;i<spans.length;i++)
+			{
+				if(spans[i].className=="aaa"){
+					spans1[j]=spans[i];
+					j++;
+				}
+				else{
+					
+				}
+			}
+oInput.onkeyup = function(){
+	//强度状态设为默认
+					
+	spans1[0].className = spans1[1].className = spans1[2].className = "default";
+					
+	var pwd = this.value;
+	var result = 0;
+	for(var i = 0, len = pwd.length; i < len; ++i){
+		result |= charType(pwd.charCodeAt(i));
+	}
+
+	var level = 0;
+	//对result进行四次循环，计算其level
+	for(var i = 0; i <= 4; i++){
+		if(result & 1){
+			level ++;
+		}
+		//右移一位
+		result = result >>> 1;
+	}
+
+	if(pwd.length >= 6){
+		switch (level) {
+			case 1:
+				spans1[0].className = "weak";
+				break;
+			case 2:
+				spans1[0].className = "medium";
+				spans1[1].className = "medium";
+				break;
+			case 3:
+			case 4:
+				spans1[0].className = "strong";
+				spans1[1].className = "strong";
+				spans1[2].className = "strong";
+				break;
+		}
+	}
+}
+}
+
+function charType(num){
+if(num >= 48 && num <= 57){
+	return 1;
+}
+if (num >= 97 && num <= 122) {
+	return 2;
+}
+if (num >= 65 && num <= 90) {
+	return 4;
+}
+return 8;
+}
+
+	//第一次密码为a123456，第二次密码为a1234567，则修改的第一次密码，确认密码也会重新校验	
+				checkPwd2();
+			
+			//校验确认密码
+				function checkPwd2(){
+					//获取第一次校验密码
+						var pwd=document.getElementById("pwd").value;
+					//获取确认密码
+						var pwd2=document.getElementById("pwd2").value;
+					//获取span对象
+						var span=document.getElementById("pwd2Span");
+					//比较前两次密码是否相同
+						if( pwd2==""|| pwd2==null){
+						//输入校验结果
+						span.innerHTML="*密码不能为空";
+						span.style.color="red";
+						return false;
+					}else if(pwd===pwd2){
+						//输入校验结果
+						span.innerHTML="*密码通过";
+						span.style.color="green";
+						return true;
+					}else{
+						//输入校验结果
+						span.innerHTML="*密码不同，请重新输入"
+						span.style.color="red";
+						return false;
+					}
+				}
+
+				//校验确认验证码------------------
+					function checkCode(){
+						//获取用户输入验证码
+							var code=document.getElementById("code").value;
+						//获取随机验证码
+							var code2=document.getElementById("codeSpan").innerHTML;
+						//获取span对象
+							var span=document.getElementById("codeSpan2");
+						//比较前两次密码是否相同
+							if( code==""|| code==null){
+							//输入校验结果
+							span.innerHTML="*验证码不能为空";
+							span.style.color="red";
+							createCode();
+							return false;
+						}else if(code==code2){
+							//输入校验结果
+							span.innerHTML="*验证码通过";
+							span.style.color="green";
+							return true;
+						}else{
+							//输入校验结果
+							span.innerHTML="*验证码错误"
+							span.style.color="red";
+							createCode();
+							return false;
+						}
+					}
+					function checkSub(){
+						checkUname();
+						checkPwd();
+						checkPwd2();
+						checkCode();
+						return checkUname()&&checkPwd()&&checkPwd2()&&checkCode();
+					}
+//----------------------------------------------------------------------------------------------------------------------
+			//封装校验：相同的保留，不同的传参
+				function checkField(id,reg){
+					//获取用户数据
+						var inp=document.getElementById(id);
+						var	va=inp.value;
+						var	alt=inp.alt;
+					//创建校验规则
+					//获取span对象
+						var span=document.getElementById(id+"Span");
+					//开始校验
+						if(va==""||va==null){
+						//输入校验结果
+							span.innerHTML="*"+alt+"不能为空";
+							span.style.color="red";
+							return false;
+						}else if(reg.test(va)){
+						//输入校验结果
+							span.innerHTML="*"+alt+"通过";
+							span.style.color="green";
+							return true;
+						}else{
+						//输入校验结果
+							span.innerHTML="*"+alt+"格式不符";
+							span.style.color="red";
+							return false;
+					}
+				}
+				
+				function checkSub(){
+					checkField("uname",/^\w{6,12}$/);
+					checkField("pwd",/^\w{6,12}$/);
+					checkField("pwd2",/^\w{6,12}$/);
+					checkField("code",/^\w{4}$/);
+					return checkField("uname",/^\w{6,12}$/)&&checkField("pwd",/^\w{6,12}$/)&&checkField("pwd2",/^\w{6,12}$/)&&checkField("code",/^\w{4}$/);
+
+				}
+				
+	</script>
+</head>
+<div class="main">
+<body onload="createCode()">
+	<div class="head_1">VIP客户登录</div>
+	<hr />
+	<form action="#" method="get" onsubmit="return checkSub()">
+		<table border="0px" cellspacing="0" cellpadding="2px" align="center">
+			<tr>
+				<td width="80px">用户名：</td>
+				<td width="400px">
+					<input type="text" name="uname" id="uname" value="" onblur="checkUname()" alt="用户名"/>
+					<span id="unameSpan">字母打头6位以上字符
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td>密码：</td>
+				<td>
+					<input type="password" name="pwd" id="pwd"/ class="input"value autocomplete="off"  />
+					<span id="pwdSpan">
+					<font>6位以上大小写数字字母混合</font>
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td>确认密码：</td>
+				<td>
+					<input type="password" name="pwd2" id="pwd2" value="" " onblur="checkPwd2()"/>
+					<span id="pwd2Span"></span>
+					<font>两次输入要一致</font>
+				</td>
+			</tr>
+			<tr>
+		<td>密码强度：</td>
+		<td class="aaa">弱</td>
+		<td class="aaa">中</td>
+		<td class="aaa">强</td>
+			</tr>
+			<tr>
+			<tr>
+				<td>校验码：</td>
+				<td>
+					<input type="text" id="code" value="" style="width:100px;" onblur="checkCode()" />&nbsp;&nbsp;&nbsp;
+					<span id="codeSpan" ;color: black;" onclick="createCode()">
+					</span>
+					<span id="codeSpan2"></span>
+					<font>4位数字字母</font>
+				</td>
+			</tr>
+			<tr>
+				<td  colspan="2" align="center">
+					<!-- 注册 -->
+					
+					<a href="test.html" onclick=""><input  type="submit" value="注册" />    </a>
+					<!-- 重置 -->
+					<input type="reset" value="重置" />
+			
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+</body>
+</html>
