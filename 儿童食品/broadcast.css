@@ -11,6 +11,7 @@ body{
     width: 1200px; /* 设置宽度 */
     position: relative; /* 相对定位 */
     overflow: hidden; /* 超出隐藏 */
+    height:300px;
 }
 #carousel img{
     width: 600px; /* 设定大小 按比例缩放 */
