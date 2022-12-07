@@ -11,7 +11,7 @@
 /* 通用样式 */
 @media(max-width:1300px){
     .footer{
-        width: 100%;
+        width: 1300px;
     }
 
 }
