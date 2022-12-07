@@ -9,6 +9,12 @@
 
 }
 /* 通用样式 */
+@media(max-width:1300px){
+    .footer{
+        width: 100%;
+    }
+
+}
 a:link{
     color: #000;
 }
